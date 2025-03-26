@@ -1,0 +1,43 @@
+Div-block level element 
+ Span-inline level element
+----------------------------------------
+block-inline
+
+block-level element -->div,h1,h2,h3,h4,h5,h6,h6,ol,li,dl,dd,dt
+                      it will occupy entire width
+                      it will start in new line
+                      it respect height and width property
+                      it respect margin and padding property
+                      convert display:inline
+
+
+inline level element---> i,Span,b,small
+                      it will occupy entire space
+                      it respect height and width property
+                      it respect margin and padding property
+                      convert display:block
+
+                      display:inline-block(it is inline element but respect height,width,margin,padding like block level element)
+                      --------------------------------------------------
+
+
+box-sizing:
+   box-sizing is a property apply for all element
+   default value is content box
+   it is used to define the width and height of an element
+
+   eg: width: 200px;
+        margin: 30px;
+        padding: 40px;
+        height:100px;
+
+    box-sizing content-box;
+    200+30+40+100=470
+
+    box-sizing block;
+
+
+    
+        
+
+

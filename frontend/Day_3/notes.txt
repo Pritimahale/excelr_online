@@ -1,0 +1,146 @@
+what are the diiferent headinf in html
+<h1>........<h6>
+---------------------------------
+
+what is css:
+
+css--cascading style sheet
+    -used to style/design web pages
+    -to apply css to an element we need to use style attribute
+
+how to use css(internal,external,inline)
+
+1.inline css: 
+   syntax:
+      <style="property:value ;property2: value2"> content</>
+    used to style specific element
+
+2.Internal css: 
+   syntax:
+  <style>
+   selector{
+    property: value;
+    property2: value2
+    }
+  </style>
+  --used to style multiple element
+
+3.Externel Css:
+   1.create a css file with .css extension
+   2.link the css file to the html file
+   3.used to style multiple pages (large scale project)
+
+syntax:
+<html>
+<head>
+<link rel="stylesheet" href="filename.css">
+</html>
+</head>
+
+inline css> internal css> Externel css
+----------------------------------------------
+what is selector:
+--element selector,class selector,id selector
+----------------------------------------------
+
+what are inline element
+what are block element
+how to convert "inline to block" and viceversa
+
+based on display we have two type of element
+
+  1.block level element
+  2.inline element
+
+  1.block level element: the element will occupy entire width of the pages
+    eg. p,h1,h2,h3,h4,h5,h6
+  2.inline element: the element will occupy its respective space in the page 
+    eg. i,small,
+
+to change the display property of an element we use
+   display attribute
+
+<p style="diiferent:inline"></p>--inline
+
+------------------------------------------------
+
+what is margin:
+  
+  the space around the border
+  -margin attribute
+  syntax:
+
+  h1{
+    margin:20px(all sides top,bottom,right,left)
+    margin:20px(top/bottom) 15px(lrft.right)  
+    margin:20px(top) 30px(right) 40px(bottom)
+           50(left) 
+
+    margin:top:
+    margin:bottom:
+    margin:right:
+    margin:left:
+}
+   
+
+syntax:
+h1{
+   padding:20px(all sides top,bottom,right,left)
+   padding:20px(top/bottom) 15px(lrft.right)  
+   padding:20px(top) 30px(right) 40px(bottom)
+           50(left) 
+
+    padding:top:
+    padding:bottom:
+    padding:right:
+    padding:left:
+}
+
+shorthand :
+padding
+
+
+
+-------------------------------------------------
+what is border:
+border: a line around the text
+---border attribute
+
+syntax :
+h1{
+
+  border-style:
+  border-color:
+  border-size:
+  based-size(thickness) style color (all side)
+
+  border-top:
+  border-bottom:
+  border-right:
+  border-left:
+  border-radius: for rounded corner
+
+
+}
+style:
+1.solid
+2.dotted
+3.double
+4.dashed
+5.groove
+6.inset
+7.outset
+8.ridge
+--------------------------------------------
+box model css 
+
+it is describe how element are structure and spaced in a web page
+
+structure;
+
+content(text/img/video)
+----->padding(space arround content)
+----->border(outlie around content)
+----->margin(space outside the border,it helps to separate element)
+
+https://validator.w3.org/nu/#file
