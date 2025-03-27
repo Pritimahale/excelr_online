@@ -1,0 +1,30 @@
+Git
+-------------------------------------
+version control system
+
+1st time:
+git init---for initialization
+git add . --for adding files/folder/vdo/img/
+git commit 
+      git config-----global.email "register email"
+      git config---global.username "username"
+git remote add origin repository link(paste)
+git pusgh origin master  /main----git push origin main----force
+
+
+----------------------------------
+from 2nd time
+
+git add .
+git commit -m "msg"
+git push origin master
+------------------------------------------
+
+working on diffrerent repository
+git init
+git add .
+git commit -m "msg"
+git remote add origin repository link(paste)
+git push origin master
+---------------------------------------------------------
+

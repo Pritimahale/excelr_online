@@ -34,7 +34,9 @@ box-sizing:
     box-sizing content-box;
     200+30+40+100=470
 
-    box-sizing block;
+    box-sizing border-box;
+    100+-+-+-+-=100px
+    ---------------------------------------------------------
 
 
     
