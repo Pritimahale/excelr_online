@@ -21,10 +21,10 @@ class MyFirstProgram{
 
 }
 
-//compile the code
+/*compile the code
   cmd ---> javac Program1.java
            ex: javac Program2.java
 
 //run the code
   --->java className.java
-      ex: java Program1.java
+      ex: java Program1.java/*

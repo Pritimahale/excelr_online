@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f3f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            display: flex;
+            width: 400px;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .left-section {
+            background-color: #2874f0;
+            color: white;
+            padding: 40px;
+            width: 40%;
+        }
+        .left-section h2 {
+            margin: 0;
+            font-size: 20px;
+        }
+        .left-section p {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .right-section {
+            padding: 30px;
+            width: 60%;
+        }
+        .input-box {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .btn {
+            width: 100%;
+            background-color: #fb641b;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #e55a17;
+        }
+        .terms {
+            font-size: 12px;
+            color: #878787;
+            margin-top: 10px;
+        }
+        .create-account {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .create-account a {
+            text-decoration: none;
+            color: #2874f0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="left-section">
+            <h2>Login</h2>
+            <p>Get access to your Orders, Wishlist and Recommendations</p>
+        </div>
+        <div class="right-section">
+            <input type="text" class="input-box" placeholder="Enter Email/Mobile number">
+            <p class="terms">By continuing, you agree to Flipkart's <b>Terms of Use</b> and <b>Privacy Policy</b>.</p>
+            <button class="btn">Request OTP</button>
+            <div class="create-account">
+                <p>New to Flipkart? <a href="#">Create an account</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
