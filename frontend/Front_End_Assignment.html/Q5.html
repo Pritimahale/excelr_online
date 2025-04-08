@@ -1,2 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Properties Showcase</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(135deg, #ec4899, #8b5cf6);
+      font-family: sans-serif;
+    }
 
-    
+   .row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      gap: 20px;
+    }
+
+    .box-container {
+      width: 150px;
+      height: 150px;
+      background: linear-gradient(to bottom right, #facc15, #f97316);
+      border: 1px solid black;
+      display: flex;
+      box-sizing: border-box;
+    }
+
+    .box {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(to top, #3b82f6, #1e3a8a);
+      margin: 0px;
+      color: white;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid black;
+      
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+
+
+
+ <div class="row">
+  <div class="wrapper">
+    <div class="box-container" style="justify-content: flex-start;">
+      <div class="box">Box1</div><div class="box">Box2</div><div class="box">Box3</div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="box-container" style="justify-content: center;">
+      <div class="box">Box1</div><div class="box">Box2</div><div class="box">Box3</div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="box-container" style="justify-content: flex-end;">
+      <div class="box">Box1</div><div class="box">Box2</div><div class="box">Box3</div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="box-container" style="justify-content: space-between;">
+      <div class="box">Box1</div><div class="box">Box2</div><div class="box">Box3</div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="box-container" style="justify-content: space-around;">
+      <div class="box">Box1</div><div class="box">Box2</div><div class="box">Box3</div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="box-container" style="justify-content: space-evenly;">
+      <div class="box">Box1</div><div class="box">Box2</div><div class="box">Box3</div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="box-container" style="align-items: flex-start; flex-direction: row;">
+      <div class="box">Box1</div><div class="box">Box2</div><div class="box">Box3</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="wrapper">
+    <div class="box-container" style="align-items: center; flex-direction: row;">
+      <div class="box">Box1</div><div class="box">Box2</div><div class="box">Box3</div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="box-container" style="align-items: flex-end; flex-direction: row;">
+      <div class="box">Box1</div><div class="box">Box2</div><div class="box">Box3</div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="box-container" style="align-items: center; flex-direction: row; padding: 10px;margin: 5px;">
+      <div class="box">Box1</div><div class="box">Box2</div><div class="box">Box3</div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="box-container" style="align-items: flex-end; justify-content: center;">
+      <div class="box">Box1</div><div class="box">Box2</div><div class="box">Box3</div>
+    </div>
+   
+  </div>
+</div>
+
+</body>
+</html>

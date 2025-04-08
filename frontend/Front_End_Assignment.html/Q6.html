@@ -24,32 +24,36 @@
             min-height: 100vh;
             gap: 10px;
             padding: 10px;
-            background-color: #296378;
+            background-color: #f4f4f4;
         }
 
         header {
             grid-area: header;
             background: #333;
-            color: rgb(220, 223, 221);
+            color: white;
             text-align: center;
             padding: 20px;
             font-size: 24px;
         }
 
-        .nav {
-            grid-area: sidebar;
-            background: #f80808;
-            padding: 20px;
-            font-size: 24px;
+        nav {
+            grid-area: nav;
+            background: #444;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
 
+        .sidebar {
+            grid-area: sidebar;
+            background: #ddd;
+            padding: 20px;
         }
 
         .main {
             grid-area: main;
-            background: rgb(147, 205, 113);
+            background: white;
             padding: 20px;
-            font-size: 24px;
-            text-align: center;
         }
 
         footer {
@@ -58,7 +62,6 @@
             color: white;
             text-align: center;
             padding: 15px;
-            font-size: 24px;
         }
 
         /* Responsive Design */
@@ -78,8 +81,9 @@
 <body>
     <div class="container">
         <header>Header</header>
-        <aside class="nav">Navigation</aside>
-        <section class="main"> Content</section>
+        <nav>Navigation</nav>
+        <aside class="sidebar">Sidebar</aside>
+        <section class="main">Main Content</section>
         <footer>Footer</footer>
     </div>
 </body>

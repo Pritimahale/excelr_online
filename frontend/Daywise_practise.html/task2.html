@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel | Web Designer</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1e1f22;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #151515;
+}
+
+.logo {
+  font-size: 24px;
+  color: #999;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  line-height: 1.3;
+  color: #fff;
+}
+
+.highlight {
+  color: #f26a6a;
+}
+
+.skills {
+  margin-top: 20px;
+  color: #888;
+  font-size: 16px;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 24px;
+  border: 2px solid #f26a6a;
+  color: #f26a6a;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #f26a6a;
+  color: #fff;
+}
+
+.img img {
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Priti Mahale</div>
+    <nav>
+      <ul>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">My Work</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hi, <br> I'm <span class="highlight">Priti</span>, <br> Web Designer.</h1>
+      <p class="skills">CSS / JavaScript / React</p>
+      <a href="#" class="contact-btn">Contact Me</a>
+    </div>
+    <div class="img">
+      <img src="./img/pass.jpg" alt="Priti Portrait">
+    </div>
+  </section>
+</body>
+</html>
