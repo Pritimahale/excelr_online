@@ -25,7 +25,7 @@ class Program2{
 }
 }
 
-{
+
 //block of code
 
 /*variable : 
@@ -51,4 +51,4 @@ Data type :
           2.Non-Primitive Data type
 
 
-}/*
+/*
