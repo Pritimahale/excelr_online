@@ -1,6 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min'
 import App from './App.jsx'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
@@ -15,6 +17,12 @@ import GrandParent from './props/PropsDrilling.jsx'
 import GrandParentContext from './context/ContextParent.jsx'
 import Login from './context/Application.jsx'
 import Container from './components/Presentational_Container.jsx'
+import EventTask1 from './Events/EventTask1.jsx'
+import InlineStyle from './Styles/InlineStyle.jsx'
+import ExternalStyle from './Styles/ExternalStyle.jsx'
+import BootStrapTask1 from './Styles/BootStrapTask1.jsx'
+import BootstrapTask2 from './Styles/BootstrapTask2.jsx'
+import EventTask2 from './Events/EventTask2.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -30,6 +38,12 @@ createRoot(document.getElementById('root')).render(
    {/* <GrandParent/> */}
    {/* <GrandParentContext/> */}
    {/* <Login/> */}
-   <Container/>
+   {/* <EventTask1/> */}
+   {/* <Container/> */}
+   {/* <InlineStyle/> */}
+   {/* <ExternalStyle/> */}
+   {/* <BootStrapTask1/> */}
+   {/* <BootstrapTask2/> */}
+   <EventTask2/>
   </StrictMode>,
 )
