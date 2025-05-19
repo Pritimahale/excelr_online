@@ -25,6 +25,8 @@ import BootstrapTask2 from './Styles/BootstrapTask2.jsx'
 import EventTask2 from './Events/EventTask2.jsx'
 import Controlled from './components/Controlled.jsx'
 import UnControlled from './components/UnControlled.jsx'
+import UseReducerExample from './states/UseReducerExample.jsx'
+import Custom1 from './states/Custom1.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -37,8 +39,8 @@ createRoot(document.getElementById('root')).render(
    {/* <Parent2/> */}
    {/* <Parent3/> */}
    {/* <Parent4/> */}
-   {/* {<GrandParent/> } */}
-   <GrandParentContext/> 
+   {/* <GrandParent/> */}
+   {/* <GrandParentContext/> */}
    {/* <Login/> */}
    {/* <EventTask1/> */}
    {/* <Container/> */}
@@ -49,5 +51,7 @@ createRoot(document.getElementById('root')).render(
    {/* <EventTask2/> */}
    {/* <Controlled/> */}
    {/* <UnControlled/> */}
+   {/* <UseReducerExample/> */}
+   <Custom1/>
   </StrictMode>,
 )
