@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 
-
 const bookSchema = new mongoose.Schema({
     title: {
         type: String,
@@ -12,7 +11,6 @@ const bookSchema = new mongoose.Schema({
     },
     genre: {
         type: String,
-        required: true
     },
     price: {
         type: Number,
