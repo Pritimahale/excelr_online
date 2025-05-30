@@ -436,3 +436,106 @@ Arrays :
     2.Accessing Arrays:
         -accessing through index position
         -accessing through for loop or for each loop
+
+Arrays class Methods:
+   -Arrays is a class present in java.util package
+   -it consist n number of static methods.
+
+   1.Arrays.toString(): used to print the values of an array
+       syntax:
+       System.out.println(Arrays.toString(arr));
+
+   2.Arrays.sort(): used to sort the values of an array
+      syntax:
+      Arrays.sort(arr); //ascending order
+      Arrays.sort(arr,Collections.reverseOrder());//descending order
+
+   3.Arrays.equals(): used to compare two arrays and returns true if 
+                     they are equal or  returns false
+      syntax:
+      boolean b=Arrays.equals(arr1,arr2);
+    
+    4.Arrays.mismatch(): used to compare two arrays and if it is same
+                         it returns the index of first element or else
+                         it returns -1
+      syntax:
+      int index=Arrays.mismatch(arr1,arr2); 
+    5.Arrays.binarySearch(): used to search an element in an array,
+                            if element is present it returns the index
+                            of that element or else it returns negative number
+        Note: it is applicable only for sorted arrays 
+      syntax:
+      int index=Arrays.binarySearch(arr,element);
+     6.Arrays.copyOfRange(): used to create a copy of an array based on copyOfRange
+        syntax:
+        int []arr1=Arrays.copyOf(arr,startingIndex,endingIndex-excluding);    
+                    
+
+Multidimensional Arrays:
+           -array of arrays
+           -declaring and initializing a multidimensional array
+        
+        int [][]arr={{1,2,3},{4,5,6},{7,8,9}}; // 2D array
+        int [][]arr=new int[3][3]; //declaring and providing a size
+
+        int [][]arr={{1,2,3},{4,5},{5,6,7,8}}// jagged arrays
+         // different rows have different number of columns
+
+  Arrays.deepToString(): used to print the values of a multidimensional array
+----------------------------------------------------------------------------------
+
+String :
+        -String is a class present in java.lang package
+        -it is used to store a sequence of characters
+        -it is immutable
+        -it is a non primitive data type
+    
+    creation of String :
+             1.with string literal
+             2.with string constructor
+
+        1.with string literal:
+            String s1="hello"; //it will create in constant pool area/string constant area
+            String s2="hello";
+            System.out.println(s1==s2);//true 
+
+        2.with string constructor:
+            String s2=new String("hello"); //it will create in heap area
+            String s3=new String("hello");
+            System.out.println(s2==s3);//false
+
+String methods:
+            1.length(): used to get the length of a string
+            2.charAt(index position): used to get the character at a particular index position ,
+                                    if index is out of range then it will throw 
+                                    an exception(StringIndexOutOfBoundsException)
+
+            3.substring(stating index,ending index): used to get a substring/part of a string
+            4.toCharArray(): used to convert a string to an array of characters
+            5.indexOf('a'): used to get the  first index of a character in a string,
+                           if character is not present then it will return -1
+            6.lastIndexOf('a'): used to get the last index of a character in a string,
+                           if character is not present then it will return -1
+            7.contains("abc"): used to check if a string contains a substring,if 
+                              it is present then it will return true or else it will return false
+            8.startsWith("abc"): used to check if a string starts with a substring,if 
+                              it is present then it will return true or else it will return false
+            9.endsWith("abc"): used to check if a string ends with a substring,if 
+                              it is present then it will return true or else it will return false
+            10.toUpperCase(): used to convert a string to uppercase
+            11.toLowerCase(): used to convert a string to lowercase
+            12.trim(): used to remove the leading and trailing spaces from a string
+            13.split(" "): used to split a string into an array of substrings based 
+                          on a delimiter
+            14.equals("abc"): used to check if a string is equal to another string, if 
+                             it is equal then it will return true or else it will return false
+            15.equalsIgnoreCase("abc"): used to check if a string is equal to another string
+                                        ignoring the case, if it is equal then it will return true
+                                        or else it will return false
+            16.matches("abc"): used to check if a string matches a regular expression, if
+                              it matches then it will return true or else it will return false
+            17.compareTo("abc"): used to compare two strings,
+                                if they are equal then it will return 0,
+                                if first string is less than second string then it will return -1,
+                                if first string is greater than second string then it will return 1
+                             
