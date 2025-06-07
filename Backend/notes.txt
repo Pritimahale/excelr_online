@@ -539,3 +539,576 @@ String methods:
                                 if first string is less than second string then it will return -1,
                                 if first string is greater than second string then it will return 1
                              
+
+limitations of String :
+           - Strings are immutable in java , so  if we modify (add,delete,replace)
+             a string then a new string will be created and the old string will be
+             garbage collected
+          - so, we use string builder and string buffer to modify a string
+ 
+------------------------------------------------------------------------------------
+                  String             StringBuffer               StringBuilder
+    -------------------------------------------------------------------------------
+mutability       immutable           mutable                    mutable
+thread safe      not applicable      applicable                 not applicable
+performance      slow                fast                       fast
+use case         general purpose     multi-thread              single-thread 
+
+----------------------------------------------------------------------------------
+Methods in StringBuffer and StringBuilder:
+          -both are classes present in java.lang package
+          -they are used to modify a string
+          -they are thread safe (StringBuffer) and (StringBuilder) are not thread safe
+ 
+ 1.append(): used to add a character or a string at the end of a string
+ 2.insert(): used to insert a character or a string at a particular index position
+        syntax:
+        sb.insert(index,character);
+        sb.insert(index,string);
+ 3.replace(): used to replace a character or a string at a particular index position
+        syntax:
+        sb.replace(start,end,character);
+        sb.replace(start,end,string);
+4.delete(): used to delete a character or a string at a particular index position
+        syntax:
+        sb.delete(start,end);
+5.deleteCharAt(): used to delete a character at a particular index position
+        syntax:
+        sb.deleteCharAt(index);
+6.reverse(): used to reverse a string
+        syntax:
+        sb.reverse();
+7.length(): used to get the length of a string
+        syntax:
+        sb.length();
+8.setLength(): used to set the length of a string
+        syntax:
+        sb.setLength(length);
+9.substring(): used to get a substring/part of a string
+        syntax:
+        sb.substring(start,end);
+10.toString(): used to convert a string to a string buffer
+        syntax:
+        sb.toString();
+11.charAt(): used to get the character at a particular index position
+        syntax:
+        sb.charAt(index);
+12.setCharAt(): used to set the character at a particular index position
+        syntax:
+        sb.setCharAt(index,character);
+12.indexOf(): used to get the first index of a character in a string
+        syntax:
+        sb.indexOf(character);
+13.lastIndexOf(): used to get the last index of a character in a string
+15.capacity(): used to get the capacity of a string buffer
+        syntax:
+        sb.capacity();
+16.ensureCapacity(): used to ensure the capacity of a string buffer
+        syntax:
+        sb.ensureCapacity(capacity);    
+
+------------------------------------------------------------------------------------------
+Methods :
+      - it is a block of code that performs a specific task
+      - methods should be enclosed in {}
+      - methods should be declared inside a class or interface or abstract class
+      - methods can invoke/call with the help of method name or method signature
+      - used to reuse the code, increases the reusability, readability of the code
+
+Note : without calling a method ,it will not run
+     : calling method is called method invocation/ method calling statement 
+
+syntax: 
+access modifier  specifier return_type method_name(parameters){
+    
+    ----
+    ----
+    return statement;
+}
+
+method signature: methodName+ parameters/arguments
+method declaration: access modifier+specifier+return_type+method_name+parameters
+method definition: method declaration+body
+
+
+Methods are two types based on arguments:
+----------------------------------------
+1. no-argument methods/zero-argument methods/non parameterized methods
+                ex:
+                public static void m1() {
+                    
+                }
+                m1();//method invocation
+2. argument methods/parameterized methods
+                ex:
+                public static void m1(int a) {
+                    
+                }
+                m1(10);//method invocation
+    
+    -----------------------------------------------------------------------------
+     actual arguments                                formal arguments
+    ------------------------------------------------------------------------------
+parameters passed to a method                        parameters declared in a method
+value/literal/expression                             datatype variableName
+    ------------------------------------------------------------------------------
+
+
+Methods are two types based on return type:
+--------------------------------------------
+1.void methods/non returned methods
+      - method does not return any value to the caller
+      - return type is void
+      - return statement is not mandatory(optional)
+2.non void methods/returned methods
+      - method returns a value/data to the caller
+      - return type is not void(primitive or non primitive)
+      - return statement is mandatory
+
+Note : return is a keyword 
+       return statement is used to return a value/data to the caller
+       return statement is used to terminate a method
+       return statement must be the last statement in a method
+       more than one return statement is not allowed in a method
+
+
+Method Overloading:
+++++++++++++++++++
+ - multiple methods with same name but different parameters or formal arguments in same class or interface
+is called method overloading
+ - method overloading is used to increase the reusability of code
+
+ Note : number of parameters should be different
+        datatype of parameters should be different
+        order of parameters should be different
+---------------------------------------------------------------------------------------
+
+Class:
+++++++
+    - class is a blue print of an object or a real world entity
+    - class is used to create objects
+    - it consist of variables and methods
+    - it is a collection of related data and functions
+    - class is created by using class keyword
+    - class is a non primitive data type
+
+ex: Bike:  
+     action/method/function :riding(), start(), stop()
+     variable/properties/data :name, color, price
+    
+Object :
+        - object is a real world entity
+        - object is created by using new keyword and class constructor;
+        - object is created in heap memory
+    
+    syntax : 
+    class ClassName{
+        //variables and methods
+    }
+
+    ClassName obj=new ClassName();
+
+Note : static members can call by using Class name
+       Non static members can call by using object reference variable
+
+
+OOPS (Object Oriented Programming):
++++++++++++++++++++++++++++++++++
+      1.Encapsulation
+      2.Abstraction
+      3.Inheritance
+      4.Polymorphism
+
+Encapsulation:
+++++++++++++++++
+- it is a process of wrapping/binding the data(variables) and methods
+  into a single unit is called encapsulation
+- we can achieve data hiding and data security
+- hiding the internal state of an object from the outside world(by using access modifiers-private)
+- providing access with the help of getter and setter methods
+
+Note : getter and setter methods are used to access private variables
+       getter are used to get/access/retrieve the value of private variable
+       setter are used to set/assign/write the value of private variable
+
+-----------------------------------------------------------------------------
+Abstraction:
+++++++++++++
+       -The process of hiding implementation  and showing only the
+        functionality to the user is called abstraction
+       - we can achieve abstraction by using abstract classes and interfaces
+
+abstract class:
+--------------
+        - class can be declared as abstract by using abstract keyword
+        - abstract class cannot be instantiated/can't create object ,
+          because it is abstract/incomplete
+        - we can have (abstract methods , concrete methods)non static and static methods
+        - we can have non static and static variables
+        - we can have constructor for reinitialization of non static variables,
+          not for object creation
+        - static and final methods cant be abstract methods
+
+interface:
+-----------
+     - interface can be create with interface keyword
+     - to achieve multiple inheritance and 100% abstraction
+     - it will allows only abstract methods and constants
+       (public static final data member) until java 8
+     - it wont allow constructor because all the data members
+       are static and final by default
+     - from java 8 , it allows static method and default methods
+
+
+Non primitive typecasting:
++++++++++++++++++++++++++
+       -converting one non primitive data type to another non primitive data type
+       -there are two types of casting:
+            1.implicit casting : 
+                   - it is done automatically by the compiler
+                   - converting child data type to parent data type
+                   - can also called as widening typecasting(upcasting)
+            2.explicit casting : it is done manually by the programmer
+                  - it is done manually by the developer need to use cast operator ()
+                  - converting parent data type to child data type
+                  - can also called as narrowing typecasting(downcasting)
+
+
+
+
+
+
+
+Inheritance:
++++++++++++
+       -The process of inheriting properties and methods from a parent class
+       to a child class is called inheritance
+       -we can achieve inheritance by using extends and implements keyword
+            class A{
+            //parent 
+            }
+
+            class B extends A{
+            //child
+            }
+
+ extends: is a keyword used to achieve inheritance in java 
+          Child class--(extends)----->Parent class
+          Child class----(extends)--->abstract Parent class
+          abstract Child class----(extends)--->Parent class  
+
+implements : is a keyword used to achieve inheritance in java
+            class ---(implements)------>interface
+            interface----(extends)------>interface
+
+
+ parent             interface                     class/abstract class
+                        |                                 |
+                        | (achievable by implements)      |(cant achieve  )
+ child           class/abstarct class                 interface
+
+
+       Types:
+            1.single level inheritance:
+                - a class can inherit properties and methods from only
+                  one parent class to a child class
+            2.multilevel inheritance
+                - a class can inherit properties and methods from more
+                  than one parent class
+            3.hierarchical inheritance
+                 - a class can inherit properties and methods from one parent
+                   to multiple child classes
+            4.multiple inheritance 
+                - a child  inheriting properties and methods from more than one parent
+                - multiple inheritance is not allowed in java by using class
+                - it can be achieved by using interfaces
+
+Diamond Problem/Ambiguity Problem:
+++++++++++++++++++++++++++++++++++
+     when we try to perform multiple inheritance in java using class, child class
+     try to call parent class constructor and try to  override parental method
+     which causes ambiguity problem and diamond problem  
+
+            5.hybrid inheritance
+                - hybrid inheritance is a combination of multiple
+                  and hierarchical inheritance
+---------------------------------------------------------------------------
+constructor:
+++++++++++++
+           - constructor is a special method
+           - constructor is used to create the object/instance
+           - constructor is called automatically when an object is created
+           - constructor is used to assign values to non static variables
+           - constructor name should be same as class name
+           - constructor doesn't have return type
+    Types:
+          1.default constructor
+                         - no arguments constructor created by java compiler by default
+          2.user defined constructor
+                         - constructor created by user/developer/programmer
+                         1.parameterized constructor/argument constructor
+                         2.non-argument constructor/non- parameterized constructor
+
+Note : if we create an user defined constructor then default constructor 
+       will not be created by java compiler
+
+
+constructor overloading:
++++++++++++++++++++++++
+            -having multiple constructors with different parameters(formal arguments)
+             in same class is  called constructor overloading
+
+rules:
+      1. constructor name should be same as class name
+      2. different number of parameters
+      3. different type of parameters
+      4. different order of parameters
+
+constructor chaining:
+++++++++++++++++++++
+           - the process of calling one constructor from another constructor
+             is called constructor chaining
+           - used to assign values to non static variables from another constructor
+           - helps to avoid duplicate code(code duplication)
+           - can achieve with the help of this() and super() statements
+           -this() - this call statement is used to call current constructor
+           -super() - super call statement is used to call parent class constructor
+
+Note : 1.this() or super () must be the first statement in a constructor
+       2.both statements can't be used together in a constructor
+    
+method overriding:
+++++++++++++++++++
+            - The process of changing the implementation of a parent class method
+              in a child class
+            - overriding is used to achieve run time polymorphism
+            - inheritance is mandatory for method overriding
+Note :
+     method signature should be same in parent class and child class
+     method return type should be same in parent class and child class
+     **final methods can't be overridden
+
+---------------------------------------------------------------------------------------
+method overloading                                        method overriding
+-----------------------------------------------------------------------------------
+multiple methods with same name                          changing the implementation
+ but different parameters                                of parent class method
+
+inheritance is not mandatory                             inheritance is mandatory
+
+compile time binding                                      run time binding
+-----------------------------------------------------------------------------------
+Object class
+++++++++++++
+         - Object class is an inbuilt class present in java.lang package from 1.0 version
+         - Object class is a parent/super/base/root class of all classes
+         - it consist 11 methods
+methods:
+-------
+1. toString()->returns a string representation of the object
+             - to print object values rather than object address/reference
+2. hashCode()->returns a hash code value for the object
+3. equals()->returns true if the specified object is equal to this object
+4. getClass()->returns the class of the object
+5. clone()->returns a copy of the object
+6. finalize()->called when the object is no longer reachable
+7. notify()->wakes up a single thread that is waiting on this object's monitor
+8. notifyAll()->wakes up all threads that are waiting on this object's monitor
+9. wait()->causes the current thread to wait until another thread invokes the notify() method or the notifyAll() method for this object
+10. wait(long timeout)->causes the current thread to wait until either another thread invokes the notify() method or the notifyAll() method for this object, or the specified amount of time has elapsed
+11. wait(long timeout, int nanos)->causes the current thread to wait until either another thread invokes the notify() method or the notifyAll() method for this object, or the specified amount of time has elapsed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Polymorphism:(many/ multiple forms)
+++++++++++++
+    -the process of having many forms is called polymorphism
+    -it is used to achieve run time polymorphism and compile
+     time polymorphism
+    Run time polymorphism:
+    ---------------------
+               - method overriding
+    Compile time polymorphism:
+    -------------------------
+               - method overloading
+               - constructor overloading
+-------------------------------------------------------------------------------------------------------------------
+   
+     
+
+----------------------------------------------------------------------------------------------------------------------
+Online Course management/platform:
+++++++++++++++++++++++++++++++++
+    
+blueprint/class:  1.User class
+                  2.Student class
+                  3.Faculty class
+                  4.Course class etc
+Encapsulation: binding data and method  together in a class
+    ex: class User{
+        private int userId;
+        private String userName;
+        private String password;
+        //getter and setter methods
+    } 
+
+Abstraction and Inheritance :
+              we can make User class as abstract class,
+              Student and Faculty as child classes of User class 
+              for providing implementation
+
+Polymorphism : attending class by teacher and student
+          abstract  class User{   
+            attendingClass(); 
+          }  
+
+          class Student extends User{
+            takingClasses(){
+                system.out.println("Student attending classes");
+            }
+          }
+
+          class Faculty extends User{
+            teachingClasses(){
+                system.out.println("Faculty teaching classes");
+            }
+          }
+
+---------------------------------------------------------------------------------------------------------------------
+Modifiers:(specifiers- c language)
+++++++++++++
+         - modifiers are keywords
+         - used to modify the visibility of class members
+         - used to modify the accessibility of class members
+         - used to provide additional information about class members
+    Types:
+       1.access modifiers
+       2.non access modifiers
+
+1.Access modifiers:
+------------------
+      - it is used to modify the accessibility and visibility of class members
+      1.public ---public keyword
+      2.private --- private keyword
+      3.protected--- protected keyword
+      4.default---no keyword
+
+---------------------------------------------------------------------------------------
+                        public         protected             default            private
+---------------------------------------------------------------------------------------
+in same class             yes          yes                  yes                yes
+
+in same package           yes          yes                  yes                no
+but in different class                    
+
+in different package      yes          yes                  no                 no
+with sub class
+
+in different package      yes          no                   no                 no
+---------------------------------------------------------------------------------------
+
+2.Non access modifiers:
+-----------------------
+        - it is used to provide additional information about class members
+
+1.static: 
+           - it is a keyword
+           - it belongs to class not object
+           - it will load members in memory only once(static area of memory) 
+  static:
+    In same class :
+            1. can call directly by using refName/method() in static method and non static method
+            2. can call with className.refName / className.method() in static and non static method
+    In different class:
+             -can call with  className.refName / className.method()
+
+  non static:
+     In same class:
+            1.can call directly by using refName/method() in non static method 
+            2.can call with objRef.refName / objRef.method() in static method
+     In different class:
+            - can call with objRef.refName / objRef.method()      
+2.final: 
+    - it is a keyword
+    - final dataMember /variable /field can't be changed/re assigned
+      need to initialize during declaration
+    - final method can't be abstract and can't be overridden
+    - final class can't be abstract and can't be inherited 
+    
+3.abstract
+     -it is a keyword
+     -use for methods and class to make it as abstract
+     -abstract class can't be instantiated and can't be final
+     -abstract method need to override in child class and can't be final
+
+4.synchronized
+5.native
+6.strictfp
+7.volatile
+8.transient etc
+-------------------------------------------------------------------------------------------------------------
+
+Wrapper class:
++++++++++++++
+    -it is a class(present in java.lang package)
+    -it is used to convert primitive data types to object data types
+    -it is used to convert object data types to primitive data types
+    -and we can achieve 100% oops
+    -A class which is wrapping a primitive data type is called wrapper class 
+  
+  primitive data types                      Object class(wrapper class/non primitive data types)
+  ------------------------------------------------------------------
+       byte                                     Byte
+       short                                    Short
+       int                                      Integer
+       long                                     Long
+       float                                    Float
+       double                                   Double
+       char                                     Character
+       boolean                                  Boolean
+      
+
+converting primitive data types to object data types:
+---------------------------------------------------
+1. AutoBoxing: automatic conversion of primitive data types to object data types
+        WrapperClass refName=value;
+2. Boxing: manual conversion of primitive data types to object data types
+       WrapperClass refName=WrapperClass.valueOf(value);
+       ex:
+       Byte b=Byte.valueOf(10);
+       Short s=Short.valueOf(10);
+       Integer i=Integer.valueOf(10);
+       Long l=Long.valueOf(10);
+       Float f=Float.valueOf(10);
+       Double d=Double.valueOf(10);
+       Character c=Character.valueOf('A');
+       Boolean b1=Boolean.valueOf(true);
+
+
+converting object data types to primitive data types:
+---------------------------------------------------
+1.AutoUnBoxing: automatic conversion of object data types to primitive data types
+        primitiveDataType refName=value;
+2.UnBoxing: manual conversion of object data types to primitive data types
+       primitiveDataType refName=WrapperClassRefName.intValue();
+
+       ex:
+       byte b=b1.byteValue();
+       short s=s1.shortValue();
+       int i=i1.intValue();
+       long l=l1.longValue();
+       float f=f1.floatValue();
+       double d=d1.doubleValue();
+       char c=c1.charValue();
+       boolean b1=b1.booleanValue();
+
+Parsing
+--------
+    - it is used to convert string to primitive data types
+ex:
+    byte b=Byte.parseByte("10");
+    short s=Short.parseShort("10");
+    int i=Integer.parseInt("10");
+    long l=Long.parseLong("10");
+    float f=Float.parseFloat("10.5");
+    double d=Double.parseDouble("10.5");
+    char c=Character.parseChar("A");
+    boolean b1=Boolean.parseBoolean("true");

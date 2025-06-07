@@ -2,7 +2,8 @@ package string_program;
 
 public class ReverseString {
 	public static void main(String[] args) {
-		String s="hello";
+		//String s= new String("hello")inside a heap area
+		String s="hello";//inside a pool area
 		//String output="olleh";
 		String output="";
 		
